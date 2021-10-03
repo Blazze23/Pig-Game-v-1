@@ -181,7 +181,8 @@ document.addEventListener('keydown', function (event) {
   }
 });
 
-// Setting screen orientation for Mobile devices
+// FIXME Setting screen orientation for Mobile devices
+//When device width is less than 608px it should automaticaly set screen orientation of the device to landscape
 const width = document.documentElement.clientWidth;
 console.log(width);
 function changeOrientation() {
