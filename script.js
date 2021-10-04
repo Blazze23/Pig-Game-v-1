@@ -187,6 +187,7 @@ const width = document.documentElement.clientWidth;
 console.log(width);
 function changeOrientation() {
   if (width < 608) {
-    screen.orientation.lock('landscape-primary');
+    screen.orientation.lock('landscape');
   }
 }
+changeOrientation();
