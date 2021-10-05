@@ -53,8 +53,10 @@ function init() {
   current0El.textContent = 0;
   current1El.textContent = 0;
   defaultPoints.checked = true;
+  btnRoll.textContent = '🎲 Start';
   btnRules.classList.remove('hidden');
   btnSettings.classList.remove('hidden');
+  btnNew.classList.add('hidden');
   diceEl.classList.add('hidden');
   btnRoll.removeAttribute('disabled', true);
   btnHold.removeAttribute('disabled', true);
@@ -92,8 +94,10 @@ function rollDice() {
     // console.log(dice);
 
     // 4) Displaying the dice and hiding Rules and Settings buttons
+    btnRoll.textContent = '🎲 Roll dice';
     btnRules.classList.add('hidden');
     btnSettings.classList.add('hidden');
+    btnNew.classList.remove('hidden');
     diceEl.classList.remove('hidden');
     diceEl.src = `dice-${dice}.png`;
 
